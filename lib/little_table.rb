@@ -15,7 +15,7 @@ class LittleTable
   end
 
   def rows
-    @table_string.lines[1..-1].map { |line| parse_line line }
+    @table_string.lines.to_a[1..-1].map { |line| parse_line line }
   end
 
   def hashes
@@ -33,7 +33,7 @@ class LittleTable
   private
 
   def parse_line_number number
-    parse_line @table_string.lines[number]
+    parse_line @table_string.lines.to_a[number]
   end
 
   def parse_line text
