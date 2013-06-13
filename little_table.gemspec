@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "little_table"
-  spec.version       = "1.0.6"
+  spec.version       = "1.0.7"
   spec.authors       = ["Jankees van Woezik"]
   spec.email         = ["jankees@base42.nl"]
   spec.description   = %q{Little Tabel converts cucumber like tables to useful objects}
@@ -21,4 +21,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "active_support"
+  spec.add_development_dependency "i18n" #required for core_ext
 end
