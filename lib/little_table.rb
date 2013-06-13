@@ -1,4 +1,6 @@
-require 'active_support/core_ext'
+require 'active_support/core_ext/object/blank'
+require 'active_support/core_ext/string/filters'
+require 'active_support/core_ext/string/inflections'
 
 class LittleTable
 
