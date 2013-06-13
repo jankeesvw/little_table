@@ -5,7 +5,7 @@ require 'little_table'
 
 Gem::Specification.new do |spec|
   spec.name          = "little_table"
-  spec.version       = LittleTable::VERSION
+  spec.version       = "1.0.2"
   spec.authors       = ["Jankees van Woezik"]
   spec.email         = ["jankees@base42.nl"]
   spec.description   = %q{Little Tabel converts cucumber like tables to useful objects}

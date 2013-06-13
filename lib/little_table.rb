@@ -2,8 +2,6 @@ require 'active_support/all'
 
 class LittleTable
 
-  VERSION = "1.0.1"
-
   def initialize input
     @table_string = input
   end
