@@ -2,6 +2,8 @@ require 'active_support/all'
 
 class LittleTable
 
+  VERSION = "1.0.1"
+
   def initialize input
     @table_string = input
   end
@@ -22,7 +24,7 @@ class LittleTable
     result = []
     rows.each do |row|
       row_hash = {}
-      headers.each_with_index do |header,index|
+      headers.each_with_index do |header, index|
         row_hash[header.parameterize('_').to_sym] = row[index]
       end
       result.push row_hash
@@ -39,4 +41,5 @@ class LittleTable
   def parse_line text
     text.split('|').reject { |i| !i.present? }.map { |value| value.squish }
   end
+
 end
