@@ -1,7 +1,7 @@
 # coding: utf-8
 require 'spec_helper'
 
-describe 'LittleTable' do
+describe LittleTable do
 
   context 'with a simple table' do
 
