@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/jankeesvw/little_table.png)](https://travis-ci.org/jankeesvw/little_table)
+[![Code Climate](https://codeclimate.com/github/jankeesvw/little_table.png)](https://codeclimate.com/github/jankeesvw/little_table)
+
 # LittleTable
 
 Little Tabel converts cucumber like tables to usefull objects
