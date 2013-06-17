@@ -4,10 +4,10 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "little_table"
-  spec.version       = "1.0.8"
+  spec.version       = "1.0.9"
   spec.authors       = ["Jankees van Woezik"]
   spec.email         = ["jankees@base42.nl"]
-  spec.description   = %q{Little Tabel converts cucumber like tables to useful objects}
+  spec.description   = %q{Little Table converts Cucumber like tables to useful objects}
   spec.summary       = %q{Convert your tables to objects}
   spec.homepage      = "http://rubygems.org/gems/little_table"
   spec.license       = "MIT"
