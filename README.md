@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/jankeesvw/little_table.png)](https://travis-ci.org/jankeesvw/little_table)
 [![Code Climate](https://codeclimate.com/github/jankeesvw/little_table.png)](https://codeclimate.com/github/jankeesvw/little_table)
+[![Dependency Status](https://gemnasium.com/jankeesvw/little_table.png)](https://gemnasium.com/jankeesvw/little_table)
 
 # LittleTable
 
