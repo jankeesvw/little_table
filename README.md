@@ -5,19 +5,21 @@
 
 # LittleTable
 
-Little Tabel converts cucumber like tables to usefull objects
+Little Tabel converts [Cucumber](http://cukes.info/step-definitions.html#data_tables) like tables to usefull Ruby objects
 
-    | column1 | column2  |
-    | cell1x1  | cell1x2 |
-    | cell2x1  | cell2x2 |
-
-Converts to:
-
-    [{column1: 'cell1x1', column2: 'cell1x2'}, {column1: 'cell2x1', column2: 'cell2x2'}] # hashes
-    ['column1','column2'] # headers
-    [['cell1x1', 'cell1x2'], ['cell2x1', 'cell2x2']]  # rows    
-  
-
+For example:
+```ruby
+scenarios = <<-EOS
+  | column1      | column2 |
+  | 10           | 5       |
+  | 12           | 9       |
+EOS
+      
+table = LittleTable.new scenarios
+puts table.hashes  # [{:column1=>"10", :column2=>"5"}, {:column1=>"12", :column2=>"9"}]
+puts table.headers # ["column1", "column2"]
+puts table.cells   # [["10", "5"], ["12", "9"]]
+```  
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -31,10 +33,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install little_table
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
