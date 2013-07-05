@@ -5,7 +5,7 @@
 
 # LittleTable
 
-Little Tabel converts [Cucumber](http://cukes.info/step-definitions.html#data_tables) like tables to usefull Ruby objects
+Little Tabel is a Ruby gem that converts [Cucumber data tables](http://cukes.info/step-definitions.html#data_tables) to useful objects
 
 For example:
 ```ruby
